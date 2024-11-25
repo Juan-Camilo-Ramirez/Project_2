@@ -1,3 +1,4 @@
+package Project;
 public class Vuelo implements Comparable<Vuelo> {
     String horaSalida;
     String aerolinea;
