@@ -1,4 +1,5 @@
 package Project;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -173,6 +174,7 @@ public class GestionVuelosGUI extends JFrame {
         resultadoArea.setText("");
         arbol.inorder(resultadoArea);
     }
+
     private void reprogramarVuelo() {
         String aerolinea = (String) aerolineaComboBox.getSelectedItem();
         Vuelo vueloReprogramado = buscarVueloPorAerolinea(arbol.raiz, aerolinea);
