@@ -1,6 +1,6 @@
 package Project;
 import javax.swing.*;
-
+//Clase donde almacenaremos de forma ordenada los vuelos
 public class ArbolBinarioBusqueda {
     Nodo raiz;
 

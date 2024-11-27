@@ -1,4 +1,5 @@
 package Project;
+//Clase principal/madre de la cual van a heredar las otras clases
 public class Vuelo implements Comparable<Vuelo> {
     String horaSalida;
     String aerolinea;

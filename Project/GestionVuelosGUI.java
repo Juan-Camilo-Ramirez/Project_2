@@ -20,8 +20,9 @@ public class GestionVuelosGUI extends JFrame {
         historialDespachados = new Stack<>();
         historialCancelados = new Stack<>();
 
+        //Elementos del frame
         setTitle("Gestión de Vuelos");
-        setSize(800, 600);
+        setSize(600, 400);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
 
@@ -42,6 +43,7 @@ public class GestionVuelosGUI extends JFrame {
         destinoComboBox = new JComboBox<>(destinos);
         panelEntrada.add(destinoComboBox);
 
+        //Acciones de los botones del frame
         JButton agregarButton = new JButton("Agregar Vuelo");
         agregarButton.addActionListener(new ActionListener() {
             @Override
@@ -98,6 +100,7 @@ public class GestionVuelosGUI extends JFrame {
         add(new JScrollPane(resultadoArea), BorderLayout.CENTER);
     }
 
+    //Metodos utilizados
     private boolean validarCampos() {
         if (horaSalidaField.getText().isEmpty() || aerolineaComboBox.getSelectedItem() == null || destinoComboBox.getSelectedItem() == null) {
             JOptionPane.showMessageDialog(this, "Por favor, complete todos los campos.", "Error", JOptionPane.ERROR_MESSAGE);
@@ -198,6 +201,7 @@ public class GestionVuelosGUI extends JFrame {
         }
     }
 
+
     public static void main(String[] args) {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
@@ -207,5 +211,3 @@ public class GestionVuelosGUI extends JFrame {
         });
     }
 }
-
-
