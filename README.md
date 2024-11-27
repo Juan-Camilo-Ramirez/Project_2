@@ -80,3 +80,5 @@ programado.
 **¬ Cancelar Vuelo:** El usuario selecciona la aerolínea y el destino del vuelo que desea cancelar.
 
 ## 5. **Prueba del código:**
+#### **Ejecución del codigo**
+https://github.com/user-attachments/assets/6449ba2d-f2d8-4902-8f12-1899692bd960
